@@ -38,5 +38,4 @@ else
     echo "Usage: $0 jmeter-file.jtl"
     exit 1
 fi
-# clean up
 echo "Report located in $dashboard_dir"
