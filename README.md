@@ -21,7 +21,7 @@ jmRpt.sh jtl-file
 
 ## Ejemplo
 
-Primero, ejecutamos un test usando script JMeter llamado **escenario.jmx** (en modo CLI):
+Primero, ejecutamos un test usando script JMeter llamado **escenario.jmx** (en modoCLI):
 
 ```
 jmeter -n -t escenario.jmx -l escenario.jtl
@@ -44,7 +44,6 @@ total 760
 drwxr-xr-x  5 carlos  staff     160 Sep 25 18:37 content
 -rw-r--r--@ 1 carlos  staff    9678 Sep 25 18:37 index.html
 -rw-r--r--  1 carlos  staff    2598 Sep 25 18:34 jmeter.log
--rw-r--r--  1 carlos  staff     596 Sep 26 11:08 local.properties
 drwxr-xr-x  7 carlos  staff     224 Sep 25 18:37 sbadmin2-1.0.7
 -rw-r--r--  1 carlos  staff     992 Sep 25 18:37 statistics.json
 ```
