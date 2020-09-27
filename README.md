@@ -7,7 +7,7 @@ Este shell script tiene dos propósitos:
 1. generar el reporte HTML usando el fichero generado por la ejecución de test de JMeter in modo CLI (Non-GUI).
 2. archivar la información relevante al test
 
-El script crea un directorio único (usando el sello del tiempo) donde se guardan los files requeridos para crear el reporte. Adicionalmente, el script copia los siguientes files:
+El script crea un directorio único (usando el sello del tiempo) donde se guardan los files requeridos para crear el reporte. Adicionalmente, el script copia los siguientes files al mencionado directorio:
 
 1. **jmeter.log**
 2. **jtl** (jmeter log/bitácora file)
@@ -34,7 +34,8 @@ Segundo, ejecutamos el script usando el file **jtl** como parámetro:
 jmRpt.sh escenario.jtl
 ```
 
-Tercero, el script crea un directorio con un sello del tiempo:
+Tercero, el script crea un directorio único con un sello del tiempo (en este caso,  2020-09-25_18:36:58.391). El listado del directorio será aproximadamente asi:
+
 ```
 ls -l 2020-09-25_18:36:58.391
 total 760
