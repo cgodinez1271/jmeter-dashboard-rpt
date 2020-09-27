@@ -1,0 +1,27 @@
+2020-08-04 15:57:07,157 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-08-04 15:57:07,201 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.3/bin/user.properties
+2020-08-04 15:57:07,203 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.3/bin/system.properties
+2020-08-04 15:57:07,205 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: Version 5.3
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: java.version=11.0.4
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: os.name=Mac OS X
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: os.arch=x86_64
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: os.version=10.14.6
+2020-08-04 15:57:07,206 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-08-04 15:57:07,207 INFO o.a.j.JMeter: java.awt.headless=null
+2020-08-04 15:57:07,207 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-08-04 15:57:07,207 INFO o.a.j.JMeter: Available Processors =8
+2020-08-04 15:57:07,222 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-08-04 15:57:07,223 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-08-04 15:57:07,223 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.3
+2020-08-04 15:57:07,223 INFO o.a.j.JMeter: user.dir  =/Users/carlos/bin
+2020-08-04 15:57:07,223 INFO o.a.j.JMeter: PWD       =/Users/carlos/bin
+2020-08-04 15:57:07,243 INFO o.a.j.JMeter: IP: 192.168.0.131 Name: WITSC02W6082HTD FullName: 192.168.0.131
+2020-08-04 15:57:07,875 INFO o.a.j.JMeter: Setting LAF to: laf:com.apple.laf.AquaLookAndFeel
+2020-08-04 15:57:09,241 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-08-04 15:57:11,327 INFO o.j.r.JARSourceHTTP: Found cached repo
+2020-08-04 15:57:11,542 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jpgc-graphs-additional=2.0, jpgc-graphs-composite=2.0, jpgc-functions=2.1, jpgc-casutg=2.9, jpgc-graphs-dist=2.0, jpgc-dummy=0.4, jmeter.backendlistener.elasticsearch=2.7.0, jpgc-filterresults=2.2, jpgc-graphs-vs=2.0, jpgc-mergeresults=2.1, jpgc-perfmon=2.1, jpgc-plugins-manager=1.4, bzm-random-csv=0.6, jpgc-webdriver=3.2, jpgc-synthesis=2.2, jpgc-tst=2.5, jpgc-wsc=0.7, jmeter-core=5.3, jmeter-ftp=5.3, jmeter-http=5.3, jmeter-jdbc=5.3, jmeter-jms=5.3, jmeter-junit=5.3, jmeter-java=5.3, jmeter-ldap=5.3, jmeter-mail=5.3, jmeter-mongodb=5.3, jmeter-native=5.3, jmeter-tcp=5.3, jmeter-components=5.3]
+2020-08-04 15:57:11,547 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-webdriver]
+2020-08-04 15:57:13,272 WARN o.a.j.g.ObjectTableModel: Header count=13 but classes count=11
+2020-08-04 15:57:13,272 WARN o.a.j.g.ObjectTableModel: Header count=13 but writeFunctor count=11
