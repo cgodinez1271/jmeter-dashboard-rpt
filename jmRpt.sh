@@ -25,7 +25,7 @@ if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
 		$path_to_jmeter -g $1 -o $dashboard_dir
 
 		# move jtl & jmx files to dashboard directory
-    	mv $jtl_file $dashboard_dir
+		mv $jtl_file $dashboard_dir
 		cp jmx_file $dashboard_dir
 
 		# move the jmeter.log to dashboard directory
