@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-#Fri Sep 25 23:02:44 EDT 2020
+# Carlos A. Godinez
 set -e
-#set -x
 
 #TODO: -Jjmeter.reportgenerator.overall_granularity=1000 -Jjmeter.reportgenerator.report_title="My Report"
+
 PID=$$
 
 if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
@@ -23,7 +23,7 @@ if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
 		fi	
 
 		# build dashboard report
-		$path_to_jmeter -g $1 -o $dashboard_dir
+		$path_to_jmeter -g $jtl_file -o $dashboard_dir
 
 		# move jtl & jmx files to dashboard directory
 		mv $jtl_file $dashboard_dir
