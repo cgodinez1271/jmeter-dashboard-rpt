@@ -4,6 +4,7 @@ set -e
 #set -x
 
 #TODO: -Jjmeter.reportgenerator.overall_granularity=1000 -Jjmeter.reportgenerator.report_title="My Report"
+PID=$$
 
 if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
 
@@ -15,21 +16,19 @@ if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
 		dashboard_dir=$(/usr/local/opt/coreutils/libexec/gnubin/date +"%Y-%m-%d_%T.%3N")
 		mkdir $dashboard_dir
 
-		# save jmeter.log y jmx files
+		# rename jmeter.log if it contains the jmx filename
 		if [[ -f jmeter.log ]]; then
 			jmx_file=$(grep '.jmx' jmeter.log | cut -d ' ' -f 7)
-			mv jmeter.log "jmeter.$$"
-		fi
+			[[ "$jmx_file" ]] && mv jmeter.log jmeter.$PID
+		fi	
 
 		# build dashboard report
 		$path_to_jmeter -g $1 -o $dashboard_dir
 
 		# move jtl & jmx files to dashboard directory
 		mv $jtl_file $dashboard_dir
-		cp jmx_file $dashboard_dir
+		[[ -f jmeter.$PID ]] && mv jmeter.$PID $dashboard_dir/jmeter.log
 
-		# move the jmeter.log to dashboard directory
-		mv "jmeter.$$" "$dashboard_dir/jmeter.log"
   	else
 		echo "$0: Jmeter executable not found"
 		exit 1
