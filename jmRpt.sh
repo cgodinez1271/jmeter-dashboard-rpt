@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Carlos A. Godinez
+#Tue Nov 17 11:53:16 EST 2020
 set -e
 
 GRANULARITY=10000
@@ -30,7 +31,7 @@ if [[ "$#" -eq 1 && -f "$1" && "$1" =~ \.jtl$ ]]; then
         # move jtl & jmx files to dashboard directory
         mv $jtl_file $dashboard_dir
         [[ "$jmx_file" ]] && cp $jmx_file $dashboard_dir
-        [[ -f errors.jtl ]] && mv errors.jtl $dashboard_dir
+        [[ -f errors.xml ]] && mv errors.xml $dashboard_dir
         [[ -f jmeter.$PID ]] && mv jmeter.$PID $dashboard_dir/jmeter.log
 
       else

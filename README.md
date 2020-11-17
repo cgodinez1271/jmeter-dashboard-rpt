@@ -9,9 +9,14 @@ Este shell script tiene dos propósitos:
 
 El script crea un directorio único (usando el sello del tiempo) donde se guardan los files requeridos para crear el reporte. Adicionalmente, el script copia los siguientes files al mencionado directorio:
 
-1. **jmeter.log**
-2. **jtl** (jmeter log/bitácora file)
-3. **jmx** (jmeter script)
+1. ***.jmx** (jmeter script file)
+2. ***.jtl** (jmeter log/bitácora file)
+3. **jmeter.log** (jmeter run log file)
+4. **errors.jtl** (log/bitácora de errores - opcional)
+
+**NOTA 1:** El reporte será generado con una granularidad de 10 segundos. 
+
+**NOTA 2:** Para obtener la bitácora de errores es necesario añadir el receptor [Simple Data Writer](https://jmeter.apache.org/usermanual/component_reference.html#Simple_Data_Writer). Este receptor debe ser configurado para solo capturar los errores.
 
 ## Uso
 
@@ -34,7 +39,7 @@ Segundo, ejecutamos el script usando el file **jtl** como parámetro:
 jmRpt.sh escenario.jtl
 ```
 
-Tercero, el script crea un directorio único con un sello del tiempo (en este caso,  2020-09-25_18:36:58.391). El listado del directorio será aproximadamente asi:
+El script crea un directorio único con un sello del tiempo (por ejemplo: 2020-09-25_18:36:58.391). El listado del directorio será aproximadamente asi:
 
 ```
 ls -l 2020-09-25_18:36:58.391
@@ -48,14 +53,14 @@ drwxr-xr-x  7 carlos  staff     224 Sep 25 18:37 sbadmin2-1.0.7
 -rw-r--r--  1 carlos  staff     992 Sep 25 18:37 statistics.json
 ```
 
-Finalmente, navege al directorio y abra el reporte en el browser:
+Finalmente, cambie de directorio y abra el reporte HTML en el browser:
 ```
 open index.html
 ```
 
 ## Nota
 
-Este script ha sido diseñado para ser ejecutado en Mac OS. Probablement funcione en Linux.
+Este script ha sido diseñado para ser ejecutado en Mac OS. Probablemente funcione en Linux.
 
 ## Disclaimer
 
